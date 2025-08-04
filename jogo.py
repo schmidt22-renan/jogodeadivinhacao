@@ -21,3 +21,17 @@ elif(nivel == 3):
     print("konan")
     totaltentativas = 5
 
+  for rodada in range (1, totalTentativas +1):
+    print("tentativa {} de {}".format(rodada,totalTentativas) )
+    chute_str = input("Digite um numero entre 1 e 100: ")
+    chute = int(chute_str)
+     
+    if(chute< 1 or >100):
+       print("Numero invalido")
+       continue
+    
+    acertou = chute == numeroSecreto
+    maior = chute > numeroSecreto
+    menor = chute < numeroSecreto
+    
+    
